@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Procedural Dungeon Generator</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-900 text-white flex flex-col justify-center items-center h-screen">
+  <div class="text-center">
+    <button onclick="window.location.reload()" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-4">
+      Gerar Nova Dungeon
+    </button>
+    <canvas id="game" width="600" height="600" class="border border-gray-700 rounded-md"></canvas>
+  </div>
+  <script type="module" src="scripts/cell.js"></script>
+  <script type="module" src="scripts/room.js"></script>
+  <script type="module" src="scripts/grid.js"></script>
+  <script type="module" src="scripts/dungeon.js"></script>
+</body>
+</html>
